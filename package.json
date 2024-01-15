@@ -2,16 +2,47 @@
   "name": "the-oversharing-geek",
   "type": "module",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
+    "astro": "astro",
+    "build": "astro check & astro build && pagefind --site dist",
     "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
+    "format": "biome format --write .",
+    "lint": "biome lint .",
     "preview": "astro preview",
-    "astro": "astro"
+    "start": "astro dev"
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
+    "@astrojs/mdx": "^2.0.4",
+    "@astrojs/sitemap": "^3.0.4",
+    "@astrojs/tailwind": "^5.1.0",
+    "@iconify-json/mdi": "^1.1.64",
     "astro": "^4.1.2",
+    "astro-icon": "^1.0.2",
+    "rehype-external-links": "^3.0.0",
+    "satori": "^0.10.11",
+    "satori-html": "^0.3.2",
+    "sharp": "^0.33.2",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@astrojs/markdown-remark": "^4.0.1",
+    "@astrojs/rss": "^4.0.2",
+    "@biomejs/biome": "^1.5.1",
+    "@pagefind/default-ui": "^1.0.4",
+    "@resvg/resvg-js": "^2.6.0",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/mdast": "^4.0.3",
+    "autoprefixer": "^10.4.16",
+    "mdast-util-to-string": "^4.0.0",
+    "pagefind": "^1.0.4",
+    "postcss": "^8.4.33",
+    "postcss-html": "^1.6.0",
+    "postcss-import": "^16.0.0",
+    "reading-time": "^1.5.0",
+    "remark-unwrap-images": "^4.0.0"
   }
 }

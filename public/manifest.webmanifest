@@ -1,0 +1,21 @@
+{
+	"name": "The Oversharing Geek",
+	"short_name": "CodersSpirit",
+	"description": "A weekly newsletter where I'll tell you about my journey from working as a Senior Software Engineer towards bootstrapping my own business... if I don't fail first.",
+	"icons": [
+		{
+			"src": "/192sq.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/512sq.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"start_url": "/",
+	"background_color": "#1d1f21",
+	"theme_color": "#2bbc8a",
+	"display": "standalone"
+}
