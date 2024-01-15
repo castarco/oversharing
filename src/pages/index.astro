@@ -65,6 +65,22 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 		</p>
 		<SocialList />
 	</section>
+	<section aria-label="Subscription Form" class="mt-16">
+		<form
+			action="https://buttondown.email/api/emails/embed-subscribe/coderspirit"
+			method="post"
+			target="popupwindow"
+			onsubmit="window.open('https://buttondown.email/coderspirit', 'popupwindow')"
+			class="embeddable-buttondown-form"
+		>
+			<!-- <label for="bd-email">Enter your email</label> -->
+			<input type="email" name="email" id="bd-email" class="brutal-txt inline-block py-2 px-4 border-2"/>
+			<input type="submit" value="Subscribe" class="brutal-btn inline-block py-2 px-4 border-2 transition-all ease-in-out duration-150" />
+			<p class="text-xs">
+				<a href="https://buttondown.email/refer/coderspirit" target="_blank">Powered by Buttondown.</a>
+			</p>
+		</form>
+	</section>
 	<section aria-label="Blog post list" class="mt-16">
 		<h2 class="title mb-4 text-xl">Posts</h2>
 		<ul class="space-y-4 sm:space-y-2">

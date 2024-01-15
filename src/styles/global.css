@@ -32,3 +32,17 @@
 		@apply mx-auto flex min-h-screen max-w-3xl flex-col bg-bgColor px-8 pt-16 font-mono text-sm font-normal text-textColor antialiased;
 	}
 }
+
+.brutal-txt{
+	border-color: hsl(var(--theme-accent));
+}
+.brutal-btn{
+	border-color: hsl(var(--theme-accent));
+	font-weight: bold;
+	filter:drop-shadow(5px 5px 0 hsl(var(--theme-accent)));
+	background-color:hsl(var(--theme-bg));
+}
+.brutal-btn:hover{
+	filter:drop-shadow(3px 3px 0 hsl(var(--theme-accent)));
+	cursor: pointer;
+}
