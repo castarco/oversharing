@@ -1,0 +1,89 @@
+{
+	"headers": [
+		{
+			"source": "/(.*).jpg",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=604800, immutable"
+				},
+				{
+					"key": "X-Content-Type-Options",
+					"value": "nosniff"
+				}
+			]
+		},
+		{
+			"source": "/(.*).png",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=604800, immutable"
+				},
+				{
+					"key": "X-Content-Type-Options",
+					"value": "nosniff"
+				}
+			]
+		},
+		{
+			"source": "/(.*).webp",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=604800, immutable"
+				},
+				{
+					"key": "X-Content-Type-Options",
+					"value": "nosniff"
+				}
+			]
+		},
+		{
+			"source": "/",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=180"
+				},
+				{
+					"key": "X-Content-Type-Options",
+					"value": "nosniff"
+				}
+			]
+		},
+		{
+			"source": "/posts/(.*)/",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=3600"
+				},
+				{
+					"key": "X-Content-Type-Options",
+					"value": "nosniff"
+				}
+			]
+		},
+		{
+			"source": "(.*).css",
+			"headers": [
+				{
+					"key": "X-Content-Type-Options",
+					"value": "nosniff"
+				}
+			]
+		},
+		{
+			"source": "(.*).woff2",
+			"headers": [
+				{
+					"key": "X-Content-Type-Options",
+					"value": "nosniff"
+				}
+			]
+		}
+	],
+	"redirects": [],
+	"trailingSlash": true
+}
