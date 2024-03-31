@@ -28,6 +28,7 @@ export function generateToc(headings: ReadonlyArray<MarkdownHeading>) {
 		if (heading.depth === 2) {
 			toc.push(heading)
 		} else {
+			// biome-ignore lint/style/noNonNullAssertion: valid assertion
 			const lastItemInToc = toc[toc.length - 1]!
 			if (heading.depth < lastItemInToc.depth) {
 				throw new Error(`Orphan heading found: ${heading.text}.`)

@@ -59,6 +59,7 @@ const markup = (title: string, pubDate: string) =>
 	</div>`
 
 export async function GET({ params: { slug } }: APIContext) {
+	// biome-ignore lint/style/noNonNullAssertion: let's hope for the best
 	const post = await getEntryBySlug('post', slug!)
 	const title = post?.data.title ?? siteConfig.title
 	const postDate = getFormattedDate(

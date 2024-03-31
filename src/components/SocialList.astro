@@ -1,32 +1,32 @@
 ---
-import { Icon } from "astro-icon/components";
+import { Icon } from 'astro-icon/components'
 
 /**
 	Uses https://github.com/natemoo-re/astro-icon#readme
 	Find icons @ https://icones.js.org/
 */
 const socialLinks: Array<{
-	name: string;
-	friendlyName: string;
-	link: string;
-	isWebmention?: boolean;
+	name: string
+	friendlyName: string
+	link: string
+	isWebmention?: boolean
 }> = [
 	{
-		name: "mdi:github",
-		friendlyName: "Github",
-		link: "https://github.com/castarco",
+		name: 'mdi:github',
+		friendlyName: 'Github',
+		link: 'https://github.com/castarco',
 	},
 	{
-		name: "mdi:mastodon",
-		friendlyName: "Mastodon",
-		link: "https://hachyderm.io/@castarco",
+		name: 'mdi:mastodon',
+		friendlyName: 'Mastodon',
+		link: 'https://hachyderm.io/@castarco',
 	},
 	{
-		name: "mdi:linkedin",
-		friendlyName: "LinkedIn",
-		link: "https://www.linkedin.com/in/castarco/",
-	}
-];
+		name: 'mdi:linkedin',
+		friendlyName: 'LinkedIn',
+		link: 'https://www.linkedin.com/in/castarco/',
+	},
+]
 ---
 
 <div class="flex flex-wrap items-end gap-x-4">

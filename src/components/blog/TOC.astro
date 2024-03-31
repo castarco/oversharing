@@ -1,16 +1,16 @@
 ---
-import type { MarkdownHeading } from "astro";
+import type { MarkdownHeading } from 'astro'
 
-import { generateToc } from "src/utils/generateToc";
-import TOCHeading from "./TOCHeading.astro";
+import { generateToc } from 'src/utils/generateToc'
+import TOCHeading from './TOCHeading.astro'
 
 interface Props {
-	headings: Array<MarkdownHeading>;
+	headings: Array<MarkdownHeading>
 }
 
-const { headings } = Astro.props;
+const { headings } = Astro.props
 
-const toc = generateToc(headings);
+const toc = generateToc(headings)
 ---
 
 <aside class="sticky top-20 order-2 -me-32 hidden basis-64 lg:block">

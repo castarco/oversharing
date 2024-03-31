@@ -5,7 +5,8 @@ export async function GET({ site }) {
 	const posts = await getCollection('post')
 	return rss({
 		title: 'The Oversharing Geek',
-		description: "A weekly newsletter where I'll tell you about my journey from working as a Senior Software Engineer towards bootstrapping my own business... if I don't fail first.",
+		description:
+			"A weekly newsletter where I'll tell you about my journey from working as a Senior Software Engineer towards bootstrapping my own business... if I don't fail first.",
 		// Pull in your project "site" from the endpoint context
 		// https://docs.astro.build/en/reference/api-reference/#contextsite
 		site,

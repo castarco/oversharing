@@ -1,23 +1,23 @@
 ---
-import type { CollectionEntry } from "astro:content";
+import type { CollectionEntry } from 'astro:content'
 
-import BaseLayout from "./Base.astro";
-import BlogHero from "@/components/blog/Hero";
-import TOC from "@/components/blog/TOC";
+import BaseLayout from './Base.astro'
+import BlogHero from '@/components/blog/Hero'
+import TOC from '@/components/blog/TOC'
 // import WebMentions from "@/components/blog/webmentions/index";
 
 interface Props {
-	post: CollectionEntry<"post">;
+	post: CollectionEntry<'post'>
 }
 
-const { post } = Astro.props;
+const { post } = Astro.props
 const {
 	data: { title, description, ogImage, pubDate, updatedDate },
 	slug,
-} = post;
-const socialImage = ogImage ?? `/og-image/${slug}.png`;
-const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
-const { headings } = await post.render();
+} = post
+const socialImage = ogImage ?? `/og-image/${slug}.png`
+const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString()
+const { headings } = await post.render()
 ---
 
 <BaseLayout meta={{ title, description, articleDate, ogImage: socialImage }}>
