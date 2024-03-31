@@ -8,6 +8,7 @@ import mdx from '@astrojs/mdx'
 import remarkUnwrapImages from 'remark-unwrap-images'
 import sitemap from '@astrojs/sitemap'
 import tailwind from '@astrojs/tailwind'
+import { shield } from '@kindspells/astro-shield'
 
 import { remarkReadingTime } from './src/utils/remark-reading-time'
 import rehypeExternalLinks from 'rehype-external-links'
@@ -38,6 +39,7 @@ export default defineConfig({
 		mdx(),
 		sitemap(),
 		tailwind({ applyBaseStyles: false }),
+		shield({})
 	],
 	prefetch: true,
 	trailingSlash: 'always',
